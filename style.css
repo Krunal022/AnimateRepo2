@@ -1,94 +1,143 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "gilroy";
+    font-family: gilroy;
+    font-weight: 500;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-#main{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-}
-#back{
+
+#main {
     width: 100%;
     height: 100vh;
 }
-#top{
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
-#workingarea{
+
+#workingarea {
     position: relative;
     margin: 0 auto;
     width: 80%;
     max-width: 1920px;
     height: 100vh;
-    /* border: 1px solid red; */
 }
-#nav{
+
+#nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 40px 0;
 }
-#nav img{
-    height:  50px;
+
+#nav img {
+    height: 50px;
 }
-#nleft , #nright{
+
+#nleft,
+#nright {
     display: flex;
     gap: 60px;
     align-items: center;
 }
-#nav a{
+
+#nav a {
+    pointer-events: all;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     font-size: 10px;
     font-weight: 600;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#hero{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0%,-50%);
+
+#hero {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
     display: flex;
     justify-content: space-between;
-    width: 100%;
+
 }
-#heroleft{
+
+#heroleft {
     min-width: 50%;
-    /* background-color: yellow; */
 }
-#heroleft #elem{
-    height: 5.5vw;
-    /* background-color: red; */
-    overflow: hidden;;
+
+#heroleft #elem {
+    position: relative;
+    height: 10vw;
+    overflow: hidden;
 }
-#heroleft #elem h1{
+#heroleft #elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft #elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family:"kajiro";
     line-height: .9;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
-    font-weight: 500;
-    font-size: 6vw;
+    font-weight: 400;
+    font-size: 11vw;
 }
-#heroleft button{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: .8vw 2vw;
-    font-size: 1vw;
+
+#heroleft button {
+    font-family:kajiro;
+    padding: .8vw 3vw;
+    pointer-events: all;
+
+    font-size: 3vw;
     margin-top: 2vw;
     border-radius: .7vw;
 }
-#heroright{
-    min-width: 25%;
-    background-color: green;
+
+#heroright {
+    width: 22%;
+    color: #fff;
+    font-size: 13px;
+}
+
+#heroright p {
+    text-align: right;
+}
+
+#imagediv {
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    background-image: url(HOCPaqb.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+#heroright p:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
