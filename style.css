@@ -88,16 +88,16 @@ body {
     min-width: 50%;
 }
 
-#heroleft #elem {
+#heroleft .elem {
     position: relative;
     height: 10vw;
     overflow: hidden;
 }
-#heroleft #elem h1:nth-child(1){
+#heroleft .elem h1:nth-child(1){
     top: 0;
 }
 
-#heroleft #elem h1 {
+#heroleft .elem h1 {
     position: absolute;
     top: 100%;
     left: 0;
